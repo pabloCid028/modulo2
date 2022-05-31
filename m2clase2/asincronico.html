@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //parte 1
+
+        let jubilacion = prompt ('Indicanos tu edad para saber si ya puedes jubilar');
+        jubilacion = parseInt (jubilacion)
+        let genero = prompt ('indicanos si eres hombre o mujer')
+        console.log (jubilacion)
+        if ((jubilacion < 60) && (genero == 'mujer')) {
+            alert('no puedes jubilarte')
+            console.log('no puedes jubilarte')
+        }
+        else if ((jubilacion < 65) && ( genero == 'hombre')) {
+            alert('no puede jubilarse')
+        console.log('no puedes jubilarte')
+        }
+        else {
+            alert('si puede jubilarse')
+        console.log('no puedes jubilarte')
+        }
+
+
+
+    </script>
+</body>
+</html>
