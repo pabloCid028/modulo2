@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    // ejercicio 1
+    let minutero = 0
+
+    while (minutero <=5){
+        let segundero = 0;
+        while (segundero <=59){
+            let mensaje ='';
+            //minutero
+            if (minutero == 1){
+                mensaje = '1 minuto ' 
+            } 
+            else {
+                mensaje =  minutero + ' minutos '
+            }
+            //segundos
+            if (segundero == 1){
+                mensaje = mensaje +  '1 segundo'
+            } 
+            else {
+                mensaje = mensaje + segundero + ' segundos '
+            }
+            console.log (mensaje)
+            segundero ++
+        }
+        minutero ++
+    }
+    //ejercicio 3 "mesas"
+
+    let cliente = 1;
+    let nmesas = prompt ('¿Cuantas mesas desea reservar?');
+    nmesas = parseInt (nmesas)
+    if (nmesas <= 200){
+        while (cliente <= nmesas){
+            console.log ('¡Bienvenid@ a mi café! Su mesa es la ' + cliente);
+            cliente = cliente + 1
+            }  
+    } else {
+        alert ('No tenemos tantas mesas');
+    }
+    
+
+    </script>
+</body>
+</html>
