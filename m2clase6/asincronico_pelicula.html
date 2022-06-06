@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let peliculas = [
+            {
+                titulo : 'animales fantasticos 3',
+                rating : 5,
+                loHasVisto : true,
+            },
+            {
+                titulo : 'spiderman 3',
+                rating : 4,
+                loHasVisto : false,
+            },
+            {
+                titulo : 'attack on titan',
+                rating : 5,
+                loHasVisto : true,
+            }
+        ];
+        for (let i=0; i<peliculas.length; i++) {
+
+            if (peliculas[i].loHasVisto ==true ){
+                console.log('Viste "' + peliculas[i].titulo + '" - ' + peliculas[i].rating + ' estrellas');
+            }       
+            else {
+                console.log('No viste "' + peliculas[i].titulo + '" - ' + peliculas[i].rating + ' estrellas');
+            }
+        } 
+    </script>
+</body>
+</html>
