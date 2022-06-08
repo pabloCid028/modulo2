@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="source">
+        <p> 
+            texto 1
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolorem dolores illo ipsa quaerat, tempore dolor, ad, molestiae adipisci minus doloribus. Modi amet sapiente at totam et reiciendis dignissimos blanditiis!
+        </p>
+    </div>
+
+    <div id="destination">
+        <p>
+            texto 2
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos molestiae nostrum optio atque sint quisquam, ab ut, consequatur, officiis delectus commodi reiciendis quis libero error excepturi vel maxime officia esse.
+        </p>
+    </div>
+    <script>
+        const e1 = document.querySelector ('#source')
+        const e2 = document.querySelector ('#destination')
+        
+        const aux = e1.innerHTML;
+
+        e1.innerHTML = e2.innerHTML;
+        e2.innerHTML = aux;
+
+    </script>
+</body>
+</html>

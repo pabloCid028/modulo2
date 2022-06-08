@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square {
+            background : Blue ;
+            height : 30px ;
+            width : 700px ;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cambio">tarea asincronica clase 7, módulo 2</h1>
+<div id="div_id" class="square"></div>
+    <script>
+
+        const titulo = document.querySelector ('h1')
+        titulo.textContent = 'Tarea asincronica con texto cambiado'
+
+        //3. Por consola, cambiá el título por un párrafo con un texto a elección.
+        // ● Para cambiar el título por un párrafo, usá lerHTMa Propiedad innL.
+
+        let mod_texto =prompt('Escribe un texto para el titulo'); 
+
+        const cambio_titulo = document.querySelector ('#cambio')
+        cambio_titulo.innerHTML =mod_texto;
+
+
+    const div_body = document.createElement('p');
+    div_body.innerHTML ='<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consequatur deleniti dolorem reprehenderit blanditiis pariatur, nostrum magnam eveniet voluptatum labore quam dolorum, fuga cumque ab mollitia nobis quo? Ratione, autem?</p>';
+    const body = document.querySelector('body');
+    body.appendChild(div_body);
+
+
+ 
+    // 2da parte 
+
+    const mod_div = document.querySelector ('#div_id')
+    mod_div.style.background = 'Blue' ;
+    mod_div.style.height = '30px' ;
+    mod_div.style.width = '700px' ;
+
+    const style = document.querySelector ('.square')
+    style.classList.add ('square')
+
+    </script>
+</body>
+</html>
